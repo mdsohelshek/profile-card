@@ -1,39 +1,47 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     letter-spacing: 1px;
-    background: linear-gradient(to right,#00008b,#e13a9d);
+    background: #fff;
     /* height: 1000px; */
 
 }
- h1{
-    color: white;
+
+h1 {
+    color: b;
     padding: 50px;
     font-size: 40px;
     text-align: center;
 }
-.contanier{ 
+
+.contanier {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.cards{
+
+.cards {
     margin: 10px;
     height: 500px;
-    width:400px ;
+    width: 400px;
     text-align: center;
-    background-color:#000047;
+    background-color: #000047;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
     transition: 0.5s all ease-in-out;
 }
-.cards:hover{
-    box-shadow: 0px 50px 30px rgba(0, 0, 0,0.5);
+
+.cards:hover {
+    box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.5);
 }
-#img{
+
+#img {
     width: 150px;
     border-radius: 50%;
     margin-top: 50px;
@@ -41,54 +49,63 @@ body{
     outline: 2px solid #e13a9d;
     transition: all 0.7s ease;
 }
-#img:hover{
+
+#img:hover {
     width: 170px;
 }
-.cards h2{
+
+.cards h2 {
     margin: 15px;
     font-size: 20px;
-    color: beige;
+    color: black;
 }
-.cards p{
+
+.cards p {
     /* margin: 7px; */
     /* margin-top: 10px; */
     font-size: 20px;
-    color: beige;
+    color: black;
     padding-bottom: 8px;
 }
-.btn{
+
+.btn {
     margin-top: 10px;
-    background: linear-gradient(to right,#e13a9d,#00008b);
+    background: linear-gradient(to right, #e13a9d, #00008b);
     padding: 10px 30px;
     border: 0;
     color: beige;
     height: 40px;
     font-weight: 500;
     font-size: 15px;
-    width:150px;
+    width: 150px;
     cursor: pointer;
     transition: all 0.7s ease;
 }
-.cards button a{
+
+.cards button a {
     text-decoration: none;
     color: beige;
     font-weight: 600;
     font-size: 15px;
 }
-.btn:hover{
-    background: linear-gradient(to right,#00008b,#e13a9d);
+
+.btn:hover {
+    background: linear-gradient(to right, #00008b, #e13a9d);
     width: 170px;
     height: 50px;
 }
-.social-media{
+
+.social-media {
     /* border: 2px solid black; */
     margin-top: 30px;
 }
-.social-media a{
+
+.social-media a {
     font-size: 30px;
     padding: 0px 12px;
     transition: all 0.7s ease;
 }
-.social-media a:hover{
+
+.social-media a:hover {
     font-size: 40px;
 }
