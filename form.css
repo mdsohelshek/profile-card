@@ -7,54 +7,52 @@ body{
     letter-spacing: 1px;
     background: linear-gradient(to right,#00008b,#e13a9d);
     /* height: 1000px; */
-
+    display: flex;
+    justify-content: center;
 }
- h1{
+h1{
     color: white;
     padding: 50px;
     font-size: 40px;
     text-align: center;
 }
-.contanier{ 
+.form{ 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.cards{
-    margin: 10px;
-    height: 500px;
-    width:400px ;
-    text-align: center;
+    padding: 40px;
     background-color:#000047;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0,0.5);
     transition: 0.5s all ease-in-out;
 }
-.cards:hover{
+.form:hover{
     box-shadow: 0px 50px 30px rgba(0, 0, 0,0.5);
 }
-#img{
-    width: 150px;
-    border-radius: 50%;
-    margin-top: 50px;
-    padding: 2px;
-    outline: 2px solid #e13a9d;
-    transition: all 0.7s ease;
-}
-#img:hover{
-    width: 170px;
-}
-.cards h2{
-    margin: 15px;
+.form div i{
     font-size: 20px;
-    color: beige;
+    color: #fff;
+    margin: 0 10px;
 }
-.cards p{
-    /* margin: 7px; */
-    /* margin-top: 10px; */
+.form div input{
+    border: none;
+    color: #fff;
     font-size: 20px;
-    color: beige;
-    padding-bottom: 8px;
+    border-bottom: 2px solid ;
+    background: transparent;
+}
+.form div textarea{
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    border-bottom: 2px solid ;
+    background: transparent;
+}
+.form div input ::placeholder{
+    color: #fff;
+}
+.form div{
+    margin: 10px;
 }
 .btn{
     margin-top: 10px;
@@ -65,30 +63,12 @@ body{
     height: 40px;
     font-weight: 500;
     font-size: 15px;
-    width:150px;
+    width:140px;
     cursor: pointer;
     transition: all 0.7s ease;
-}
-.cards button a{
-    text-decoration: none;
-    color: beige;
-    font-weight: 600;
-    font-size: 15px;
 }
 .btn:hover{
     background: linear-gradient(to right,#00008b,#e13a9d);
     width: 170px;
     height: 50px;
-}
-.social-media{
-    /* border: 2px solid black; */
-    margin-top: 30px;
-}
-.social-media a{
-    font-size: 30px;
-    padding: 0px 12px;
-    transition: all 0.7s ease;
-}
-.social-media a:hover{
-    font-size: 40px;
 }
