@@ -1,111 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); /* add a nice font family to your page */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    letter-spacing: 1px;
-    background: #fff;
-    /* height: 1000px; */
-
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
-    color: b;
-    padding: 50px;
-    font-size: 40px;
-    text-align: center;
+  font-size: 2.5rem; /*always use relative font sizes (rem, em etc...) instead of fixe pixel format*/
+  text-align: center;
+  font-weight: bold;
 }
 
-.contanier {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.cards {
-    margin: 10px;
-    height: 500px;
-    width: 400px;
-    text-align: center;
-    background-color: #000047;
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
-    transition: 0.5s all ease-in-out;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  gap: 1.5rem;
+  border-radius: 6px;
+  width: min(90vw, 400px);
+  text-align: center;
+  background-color: #000047;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  /* applying box shadow in moderation is good */
+  transition: 0.4s box-shadow ease-in;
 }
 
-.cards:hover {
-    box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.5);
+.card:hover {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-#img {
-    width: 150px;
-    border-radius: 50%;
-    margin-top: 50px;
-    padding: 2px;
-    outline: 2px solid #e13a9d;
-    transition: all 0.7s ease;
+.img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  outline: 2px solid #e13a9d;
+  background: url("./img/bb60390f-8325-4d77-a294-d8cedc10097a.jpg ");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: background-size 0.3s ease-in;
+}
+.img:hover {
+  background-size: 110%;
 }
 
-#img:hover {
-    width: 170px;
+.card h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
-.cards h2 {
-    margin: 15px;
-    font-size: 20px;
-    color: black;
-}
-
-.cards p {
-    /* margin: 7px; */
-    /* margin-top: 10px; */
-    font-size: 20px;
-    color: black;
-    padding-bottom: 8px;
+.card p {
+  font-size: 1rem;
+  color: black;
 }
 
 .btn {
-    margin-top: 10px;
-    background: linear-gradient(to right, #e13a9d, #00008b);
-    padding: 10px 30px;
-    border: 0;
-    color: beige;
-    height: 40px;
-    font-weight: 500;
-    font-size: 15px;
-    width: 150px;
-    cursor: pointer;
-    transition: all 0.7s ease;
-}
-
-.cards button a {
-    text-decoration: none;
-    color: beige;
-    font-weight: 600;
-    font-size: 15px;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  background: linear-gradient(to right, #e13a9d, #00008b);
+  padding: 10px 30px;
+  border: none;
+  color: beige;
+  /* height: 40px; height is redundant when you're giving a padding already */
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 15px;
+  width: 150px;
+  cursor: pointer;
 }
 
 .btn:hover {
-    background: linear-gradient(to right, #00008b, #e13a9d);
-    width: 170px;
-    height: 50px;
+  background: linear-gradient(to right, #e13a9ddd, #00008bdd);
+  /*adding too much un-neccessary effects are not a good practice as it clutters your website*/
 }
 
-.social-media {
-    /* border: 2px solid black; */
-    margin-top: 30px;
+.card button a {
+  text-decoration: none;
+  color: beige;
+}
+
+.about h2 {
+  padding: 0 0 0.25rem 0;
+}
+.about p {
+  font-size: 0.85rem;
 }
 
 .social-media a {
-    font-size: 30px;
-    padding: 0px 12px;
-    transition: all 0.7s ease;
-}
-
-.social-media a:hover {
-    font-size: 40px;
+  font-size: 25px;
+  padding: 0px 12px;
 }
